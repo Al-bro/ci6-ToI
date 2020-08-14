@@ -1,0 +1,99 @@
+Starting AssetCooker...
+Argument '--shaders' has been deprecated and is no longer used.
+XLP cook starting...
+C:\Users\Alex\Documents\Firaxis ModBuddy\Civilization VI\CIV 6 - ToI\CIV 6 - ToI\XLPs\tilebases.xlp
+Opened output file: C:\Users\Alex\Documents\My Games\Sid Meier's Civilization VI\Mods\CIV 6 - ToI\Platforms\MacOS\BLPs/landmarks/tilebases.blp    For XLP: 'C:\Users\Alex\Documents\Firaxis ModBuddy\Civilization VI\CIV 6 - ToI\CIV 6 - ToI\XLPs\tilebases.xlp'
+Could not load digest key: ''.  Using mod key to sign BLP.
+Starting 'landmarks/tilebases'
+
+****** Log from Geometry: 'DIS_PRD_PowerPlant_FossilFuel_PIL' ********
+--------------
+Geo DIS_PRD_PowerPlant_FossilFuel_PIL mesh PRD_Mat001 flagged for possible vertex duplication. Vertex Count: 1360, Index Count: 2010, Tri Count 670, Reused Vertices: 622, Duplicate Vertices: 0, Duplicate Positions: 533, Vertex:Tri Ratio: 2.03
+Geo DIS_PRD_PowerPlant_FossilFuel_PIL mesh FossilFuel_Mat001 flagged for possible vertex duplication. Vertex Count: 1917, Index Count: 3732, Tri Count 1244, Reused Vertices: 1196, Duplicate Vertices: 0, Duplicate Positions: 699, Vertex:Tri Ratio: 1.54
+
+****** Log from Geometry: 'DIS_PRD_PowerPlant_FossilFuel' ********
+--------------
+Geo DIS_PRD_PowerPlant_FossilFuel mesh PRD_Mat flagged for possible vertex duplication. Vertex Count: 642, Index Count: 1008, Tri Count 336, Reused Vertices: 326, Duplicate Vertices: 0, Duplicate Positions: 252, Vertex:Tri Ratio: 1.91
+
+****** Log from Geometry: 'DIS_PRD_PowerPlant_Fossil_Resource' ********
+--------------
+Geo DIS_PRD_PowerPlant_Fossil_Resource Mesh Oil_Resource : 3 vertices removed by tangent merger.
+Geo DIS_PRD_PowerPlant_Fossil_Resource Mesh Oil_Resource_CONPIL : 6 vertices removed by tangent merger.
+Geo DIS_PRD_PowerPlant_Fossil_Resource mesh Oil_Resource flagged for possible vertex duplication. Vertex Count: 661, Index Count: 1278, Tri Count 426, Reused Vertices: 408, Duplicate Vertices: 0, Duplicate Positions: 253, Vertex:Tri Ratio: 1.55
+
+****** Log from Geometry: 'DIS_PRD_Factory_Decal' ********
+--------------
+Geo DIS_PRD_Factory_Decal Mesh Decal_IND_Rect_Patch027 : 2 vertices removed by tangent merger.
+
+****** Log from Geometry: 'DIS_PRD_Factory_Decal_B' ********
+--------------
+Geo DIS_PRD_Factory_Decal_B Mesh Decal_IND_Rect_Patch028 : 2 vertices removed by tangent merger.
+
+****** Log from Geometry: 'DIS_PRD_Factory_PIL' ********
+--------------
+Geo DIS_PRD_Factory_PIL Mesh Factory_PIL : 24 vertices removed by tangent merger.
+Geo DIS_PRD_Factory_PIL mesh Factory_PIL flagged for possible vertex duplication. Vertex Count: 3304, Index Count: 5796, Tri Count 1932, Reused Vertices: 1796, Duplicate Vertices: 0, Duplicate Positions: 1253, Vertex:Tri Ratio: 1.71
+
+****** Log from Geometry: 'DIS_PRD_Factory' ********
+--------------
+Geo DIS_PRD_Factory Mesh Factory : 43 vertices removed by tangent merger.
+Geo DIS_PRD_Factory mesh Factory flagged for possible vertex duplication. Vertex Count: 2818, Index Count: 4920, Tri Count 1640, Reused Vertices: 1578, Duplicate Vertices: 0, Duplicate Positions: 1111, Vertex:Tri Ratio: 1.72
+
+****** Log from Geometry: 'IMP_SILO_Decals' ********
+--------------
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch002 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch003 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch004 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch005 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch006 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Rect_Sq_Patch002 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Straight_Tileable003 : 43 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Straight_Tileable006 : 3 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Straight_Tileable009 : 1 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Rect_Sq_Patch004 : 4 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Rect_Sq_Patch005 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch007 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch008 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch009 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch010 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_IND_Rect_Patch011 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Rect_Sq_Patch007 : 2 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Straight_Tileable031 : 43 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Straight_Tileable034 : 3 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Rect_Sq_Patch008 : 4 vertices removed by tangent merger.
+Geo IMP_SILO_Decals Mesh Decal_MOD_Rect_Sq_Patch009 : 2 vertices removed by tangent merger.
+
+****** Log from Geometry: 'IMP_SILO_Launch_Pad_PIL' ********
+--------------
+Geo IMP_SILO_Launch_Pad_PIL Mesh IMP_SILO_Launch_Pad_Mesh_PIL : 20 vertices removed by tangent merger.
+Geo IMP_SILO_Launch_Pad_PIL mesh IMP_SILO_Launch_Pad_Mesh_PIL flagged for possible vertex duplication. Vertex Count: 1640, Index Count: 3195, Tri Count 1065, Reused Vertices: 993, Duplicate Vertices: 0, Duplicate Positions: 579, Vertex:Tri Ratio: 1.54
+
+****** Log from Geometry: 'IMP_Airstrip_Decal' ********
+--------------
+Geo IMP_Airstrip_Decal Mesh Decal_ANC_Straight_Fade_Both010 : 22 vertices removed by tangent merger.
+Geo IMP_Airstrip_Decal Mesh Decal_ANC_FadeOut006 : 14 vertices removed by tangent merger.
+Geo IMP_Airstrip_Decal Mesh Decal_ANC_FadeOut011 : 14 vertices removed by tangent merger.
+
+****** Log from Geometry: 'DIS_PRD_PileA' ********
+--------------
+Geo DIS_PRD_PileA mesh DIS_PRD_PileA flagged for possible vertex duplication. Vertex Count: 2103, Index Count: 3420, Tri Count 1140, Reused Vertices: 1095, Duplicate Vertices: 0, Duplicate Positions: 820, Vertex:Tri Ratio: 1.84
+
+****** Log from Geometry: 'DIS_PRD_PileB' ********
+--------------
+Geo DIS_PRD_PileB Mesh DIS_PRD_PileB : 1 vertices removed by tangent merger.
+
+****** Log from Geometry: 'Test2' ********
+--------------
+Geo Test2 Mesh DIS_PRD_FactoryIND : 13 vertices removed by tangent merger.
+Load finished for: 'landmarks/tilebases' in 1.407 seconds
+Geometry is required to autogenerate an OB for asset "IMP_GARBAGE_Pit_Decal001".
+			An empty OB will be used for this asset.
+Geometry is required to autogenerate an OB for asset "IMP_GARBAGE_Pit_Decal002".
+			An empty OB will be used for this asset.
+Asset "IMP_TOI_REFINERY_building" has AttachmentPoint "DIS_PRD_PowerPlant_FossilFuel_Tower001" on a bone with non-uniform scaling (0.910, 0.910, 0.817) (1/9)
+Asset "IMP_TOI_REFINERY_building" has AttachmentPoint "DIS_PRD_PowerPlant_FossilFuel_Tower002" on a bone with non-uniform scaling (0.910, 0.910, 0.817) (2/10)
+Cook finished for: 'landmarks/tilebases' in 0.019 seconds
+Disk write finished for: 'landmarks/tilebases' in 0.549 seconds
+Cleanup finished for: 'landmarks/tilebases' in 0.019 seconds
+XLP cook completed with success.
+Cook completed in 2.005 seconds

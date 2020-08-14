@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>CIVILIZATION VI: [COLOR:ResProductionLabelCS]TITANS OF INDUSTRY[ENDCOLOR]</Name>
+    <Guid>a57ef51e-a882-4601-bff8-9cb6ac83377e</Guid>
+    <ProjectGuid>5c1a9f8e-a5bd-4d44-8d98-7f1bca15850b</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Bloorp bloorp</Teaser>
+    <Description>Bloorp bloorp</Description>
+    <Authors>Albro</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+</Associations>]]></AssociationData>
+    <AssemblyName>CIV 6 - ToI</AssemblyName>
+    <RootNamespace>CIV 6 - ToI</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="NewAction"><File>Gameplay/TOI_Core.sql</File></UpdateDatabase><UpdateArt id="NewAction"><File>(Mod Art Dependency File)</File><File>ArtDefs/Improvements.artdef</File><File>ArtDefs/Landmarks.artdef</File></UpdateArt></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="CIV 6 - ToI.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArtDefs\Improvements.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ArtDefs\Landmarks.artdef">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\TOI_Art.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_GARBAGE_PileA.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_GARBAGE_PileB.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_GARBAGE_Pit_Decal001.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_GARBAGE_Pit_Decal002.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_GARBAGE_Tires_003.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_GARBAGE_Tires_004.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_GARBAGE.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_REFINERY.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_REFINERY_building.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_REFINERY_building_02.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Gameplay\TOI_Core.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Geometries\IMP_GARBAGE_TAR_Decal003.fgx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Geometries\IMP_GARBAGE_TAR_Decal003.geo">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Geometries\IMP_GARBAGE_TAR_Decal004.fgx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Geometries\IMP_GARBAGE_TAR_Decal004.geo">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Geometries\IMP_GARBAGE_Tires_003.fgx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Geometries\IMP_GARBAGE_Tires_003.geo">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Geometries\IMP_GARBAGE_Tires_004.fgx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Geometries\IMP_GARBAGE_Tires_004.geo">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_GARBAGE_Group.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_GARBAGE_TarPit_Decal.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_GARBAGE_TIRES.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_TOI_REFINERY_Base.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_TOI_REFINERY_Base_Non_Emissive.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_Base_B.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_Base_B.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_Base_G.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_Base_G.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_Base_N.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_Base_N.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TarPit_Decal_B.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TarPit_Decal_B.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TarPit_Decal_FOW.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TarPit_Decal_FOW.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TarPit_Decal_G.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TarPit_Decal_G.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TarPit_Decal_H.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TarPit_Decal_H.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_albedo.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_albedo.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_ao.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_ao.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_gloss.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_gloss.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_metalness.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_metalness.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_normal.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_GARBAGE_TIRE_normal.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_TOI_REFINERY_Base_B.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_TOI_REFINERY_Base_B.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XLPs\tilebases.xlp">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArtDefs\" />
+    <Folder Include="Art\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Gameplay\" />
+    <Folder Include="Geometries\" />
+    <Folder Include="Materials\" />
+    <Folder Include="Textures\" />
+    <Folder Include="XLPs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

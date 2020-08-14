@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="TileBase"/>
+	<m_PackageName text="landmarks/tilebases"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="IMP_TOI_REFINERY_building"/>
+			<m_ObjectName text="IMP_TOI_REFINERY_building"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_REFINERY_building_02"/>
+			<m_ObjectName text="IMP_TOI_REFINERY_building_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_REFINERY"/>
+			<m_ObjectName text="IMP_TOI_REFINERY"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_GARBAGE"/>
+			<m_ObjectName text="IMP_TOI_GARBAGE"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_GARBAGE_PileA"/>
+			<m_ObjectName text="IMP_GARBAGE_PileA"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_GARBAGE_PileB"/>
+			<m_ObjectName text="IMP_GARBAGE_PileB"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_GARBAGE_Pit_Decal001"/>
+			<m_ObjectName text="IMP_GARBAGE_Pit_Decal001"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_GARBAGE_Pit_Decal002"/>
+			<m_ObjectName text="IMP_GARBAGE_Pit_Decal002"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_GARBAGE_Tires_003"/>
+			<m_ObjectName text="IMP_GARBAGE_Tires_003"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_GARBAGE_Tires_004"/>
+			<m_ObjectName text="IMP_GARBAGE_Tires_004"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_FactorySubB"/>
+			<m_ObjectName text="IMP_FOOD_FactorySubB"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_FactoryINDExt"/>
+			<m_ObjectName text="IMP_FOOD_FactoryINDExt"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_FOOD_building_Stack"/>
+			<m_ObjectName text="IMP_TOI_FOOD_building_Stack"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_FOOD_FACTORY_IND"/>
+			<m_ObjectName text="IMP_TOI_FOOD_FACTORY_IND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_FactoryIND_test"/>
+			<m_ObjectName text="IMP_FOOD_FactoryIND_test"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+
