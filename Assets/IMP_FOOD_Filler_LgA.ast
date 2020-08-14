@@ -17,20 +17,20 @@
 			<m_stateSet/>
 		</m_behaviorDataSets>
 		<m_behaviorInstances/>
-		<m_dsgName text="Standard_Landmark"/>
+		<m_dsgName text=""/>
 		<m_referenceGeometryNames/>
 	</m_BehaviorData>
 	<m_GeometrySet>
 		<m_ModelInstances>
 			<Element>
-				<m_Name text="DIS_PRD_FactoryIND"/>
-				<m_GeoName text="Test2"/>
+				<m_Name text="DIS_PRD_HansaFiller_LgA"/>
+				<m_GeoName text="DIS_PRD_HansaFiller_LgA"/>
 				<m_GroupStates>
 					<Element>
 						<m_Values>
 							<m_Values>
 								<Element class="AssetObjects..ObjectValue">
-									<m_ObjectName text="IMP_FOOD_PRD_Base"/>
+									<m_ObjectName text="IMP_FOOD_Base_Variants"/>
 									<m_eObjectType>MATERIAL</m_eObjectType>
 									<m_ParamName text="Material"/>
 								</Element>
@@ -63,15 +63,15 @@
 								</Element>
 							</m_Values>
 						</m_Values>
-						<m_GroupName text="DIS_PRD_AGroup"/>
-						<m_MeshName text="DIS_PRD_FactoryIND"/>
+						<m_GroupName text="DIS_PRD_Base_Variants"/>
+						<m_MeshName text="DIS_PRD_HansaFiller_LgA"/>
 						<m_StateName text="Worked"/>
 					</Element>
 					<Element>
 						<m_Values>
 							<m_Values>
 								<Element class="AssetObjects..ObjectValue">
-									<m_ObjectName text="IMP_FOOD_PRD_Base_Non_Emissive"/>
+									<m_ObjectName text="IMP_FOOD_Base_Variants_Non_Emissive"/>
 									<m_eObjectType>MATERIAL</m_eObjectType>
 									<m_ParamName text="Material"/>
 								</Element>
@@ -104,15 +104,15 @@
 								</Element>
 							</m_Values>
 						</m_Values>
-						<m_GroupName text="DIS_PRD_AGroup"/>
-						<m_MeshName text="DIS_PRD_FactoryIND"/>
+						<m_GroupName text="DIS_PRD_Base_Variants"/>
+						<m_MeshName text="DIS_PRD_HansaFiller_LgA"/>
 						<m_StateName text="Unworked"/>
 					</Element>
 					<Element>
 						<m_Values>
 							<m_Values>
 								<Element class="AssetObjects..ObjectValue">
-									<m_ObjectName text="IMP_FOOD_PRD_Base"/>
+									<m_ObjectName text="IMP_FOOD_Base_Variants"/>
 									<m_eObjectType>MATERIAL</m_eObjectType>
 									<m_ParamName text="Material"/>
 								</Element>
@@ -145,15 +145,15 @@
 								</Element>
 							</m_Values>
 						</m_Values>
-						<m_GroupName text="DIS_PRD_AGroup"/>
-						<m_MeshName text="DIS_PRD_FactoryIND"/>
+						<m_GroupName text="DIS_PRD_Base_Variants"/>
+						<m_MeshName text="DIS_PRD_HansaFiller_LgA"/>
 						<m_StateName text="Pillaged"/>
 					</Element>
 					<Element>
 						<m_Values>
 							<m_Values>
 								<Element class="AssetObjects..ObjectValue">
-									<m_ObjectName text="DIS_PRD_AGroup"/>
+									<m_ObjectName text="DIS_PRD_Base_Variants_Non_Emissive"/>
 									<m_eObjectType>MATERIAL</m_eObjectType>
 									<m_ParamName text="Material"/>
 								</Element>
@@ -186,15 +186,15 @@
 								</Element>
 							</m_Values>
 						</m_Values>
-						<m_GroupName text="DIS_PRD_AGroup"/>
-						<m_MeshName text="DIS_PRD_FactoryIND"/>
+						<m_GroupName text="DIS_PRD_Base_Variants"/>
+						<m_MeshName text="DIS_PRD_HansaFiller_LgA"/>
 						<m_StateName text="Construction"/>
 					</Element>
 					<Element>
 						<m_Values>
 							<m_Values>
 								<Element class="AssetObjects..ObjectValue">
-									<m_ObjectName text="DIS_PRD_AGroup"/>
+									<m_ObjectName text="DIS_PRD_Base_Variants"/>
 									<m_eObjectType>MATERIAL</m_eObjectType>
 									<m_ParamName text="Material"/>
 								</Element>
@@ -227,8 +227,8 @@
 								</Element>
 							</m_Values>
 						</m_Values>
-						<m_GroupName text="DIS_PRD_AGroup"/>
-						<m_MeshName text="DIS_PRD_FactoryIND"/>
+						<m_GroupName text="DIS_PRD_Base_Variants"/>
+						<m_MeshName text="DIS_PRD_HansaFiller_LgA"/>
 						<m_StateName text="Unbuilt"/>
 					</Element>
 				</m_GroupStates>
@@ -337,7 +337,7 @@
 	<m_Materials/>
 	<m_ClassName text="TileBase"/>
 	<m_DataFiles/>
-	<m_Name text="IMP_FOOD_FactoryIND_test"/>
+	<m_Name text="IMP_FOOD_Filler_LgA"/>
 	<m_Description text=""/>
 	<m_Tags>
 		<Element text="TileBase"/>

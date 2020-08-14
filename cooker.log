@@ -85,7 +85,16 @@ Geo DIS_PRD_PileB Mesh DIS_PRD_PileB : 1 vertices removed by tangent merger.
 ****** Log from Geometry: 'Test2' ********
 --------------
 Geo Test2 Mesh DIS_PRD_FactoryIND : 13 vertices removed by tangent merger.
-Load finished for: 'landmarks/tilebases' in 1.407 seconds
+
+****** Log from Geometry: 'DIS_PRD_HansaFiller_SmA' ********
+--------------
+Geo DIS_PRD_HansaFiller_SmA mesh DIS_PRD_HansaFiller_SmA flagged for possible vertex duplication. Vertex Count: 308, Index Count: 480, Tri Count 160, Reused Vertices: 146, Duplicate Vertices: 0, Duplicate Positions: 128, Vertex:Tri Ratio: 1.92
+
+****** Log from Geometry: 'DIS_PRD_HansaFiller_LgA' ********
+--------------
+Geo DIS_PRD_HansaFiller_LgA Mesh DIS_PRD_HansaFiller_LgA : 2 vertices removed by tangent merger.
+Geo DIS_PRD_HansaFiller_LgA mesh DIS_PRD_HansaFiller_LgA flagged for possible vertex duplication. Vertex Count: 312, Index Count: 492, Tri Count 164, Reused Vertices: 154, Duplicate Vertices: 0, Duplicate Positions: 125, Vertex:Tri Ratio: 1.90
+Load finished for: 'landmarks/tilebases' in 1.480 seconds
 Geometry is required to autogenerate an OB for asset "IMP_GARBAGE_Pit_Decal001".
 			An empty OB will be used for this asset.
 Geometry is required to autogenerate an OB for asset "IMP_GARBAGE_Pit_Decal002".
@@ -93,7 +102,7 @@ Geometry is required to autogenerate an OB for asset "IMP_GARBAGE_Pit_Decal002".
 Asset "IMP_TOI_REFINERY_building" has AttachmentPoint "DIS_PRD_PowerPlant_FossilFuel_Tower001" on a bone with non-uniform scaling (0.910, 0.910, 0.817) (1/9)
 Asset "IMP_TOI_REFINERY_building" has AttachmentPoint "DIS_PRD_PowerPlant_FossilFuel_Tower002" on a bone with non-uniform scaling (0.910, 0.910, 0.817) (2/10)
 Cook finished for: 'landmarks/tilebases' in 0.019 seconds
-Disk write finished for: 'landmarks/tilebases' in 0.549 seconds
-Cleanup finished for: 'landmarks/tilebases' in 0.019 seconds
+Disk write finished for: 'landmarks/tilebases' in 0.529 seconds
+Cleanup finished for: 'landmarks/tilebases' in 0.020 seconds
 XLP cook completed with success.
-Cook completed in 2.005 seconds
+Cook completed in 2.061 seconds

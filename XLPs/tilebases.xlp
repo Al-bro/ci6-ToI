@@ -69,6 +69,22 @@
 			<m_EntryID text="IMP_FOOD_FactoryIND_test"/>
 			<m_ObjectName text="IMP_FOOD_FactoryIND_test"/>
 		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_Filler_SmA"/>
+			<m_ObjectName text="IMP_FOOD_Filler_SmA"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_Filler_LgA"/>
+			<m_ObjectName text="IMP_FOOD_Filler_LgA"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_Filler_SmB"/>
+			<m_ObjectName text="IMP_FOOD_Filler_SmB"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_Filler_SmC"/>
+			<m_ObjectName text="IMP_FOOD_Filler_SmC"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

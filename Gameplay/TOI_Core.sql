@@ -36,7 +36,6 @@ INSERT INTO Types
 (	'IMPROVEMENT_TOI_GARBAGE',										'KIND_IMPROVEMENT'		),
 (	'IMPROVEMENT_TOI_FOOD_FACTORY',									'KIND_IMPROVEMENT'		),
 
-(	'TOI_MODIFIER_ALL_DISTRICTS_ADJUST_DISTRICT_AMENITY',			'KIND_MODIFIER'			),
 (	'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',				'KIND_MODIFIER'			),
 
 (	'PROJECT_TOI_T1_01',											'KIND_PROJECT'			),
@@ -254,8 +253,8 @@ INSERT INTO Types
 			(	'IMPROVEMENT_TOI_GARBAGE',						'TOI_IMPROVE_POWER_PENALTY_02'				),
 			(	'IMPROVEMENT_TOI_GARBAGE',						'TOI_IMPROVE_GOLD_PENALTY_08'				),
 
-			(	'IMPROVEMENT_TOI_FOOD_FACTORY',					'TOI_IMPROVE_ADJUST_YIELD_FOOD_NEG_01'		),
-			(	'IMPROVEMENT_FARM',								'TOI_IMPROVE_ADJUST_YIELD_FOOD_01'			);
+			(	'IMPROVEMENT_TOI_FOOD_FACTORY',					'TOI_IMPROVE_ADJUST_YIELD_FOOD_01'			),
+			(	'IMPROVEMENT_FARM',								'TOI_IMPROVE_GOLD_PENALTY_08'				);
 
 
 --===========================================================================================================================================================================--	
@@ -308,50 +307,49 @@ INSERT INTO Types
 		INSERT INTO DynamicModifiers 
 			(	ModifierType,																	CollectionType,						EffectType															)	VALUES
 
-			(	'TOI_MODIFIER_ALL_DISTRICTS_ADJUST_DISTRICT_AMENITY',							'COLLECTION_ALL_DISTRICTS',			'EFFECT_ADJUST_DISTRICT_AMENITY'									),			
 			(	'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',								'COLLECTION_OWNER',					'EFFECT_ADD_PLAYER_PROJECT_AVAILABILITY'							);			
 
 
 --===========================================================================================================================================================================--		
 
 		INSERT INTO Modifiers 
-			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,	OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
+			(	ModifierId,												ModifierType,									 				RunOnce,	Permanent,		Repeatable,		OwnerRequirementSetId,		OwnerStackLimit,			SubjectStackLimit,				SubjectRequirementSetId							)	VALUES
 			
-			(	'TOI_ERA_ADJUST_AMENITY_01',							'TOI_MODIFIER_ALL_DISTRICTS_ADJUST_DISTRICT_AMENITY',			 1,			1,			NULL,						NULL,						NULL,							NULL											),
-
-			(	'TOI_IMPROVE_ADJUST_AMENITY_01',						'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_AMENITY',				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-
-			(	'TOI_IMPROVE_ADJUST_YIELD_FOOD_01',						'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_IMP_GRANT_FOOD'						),
-			(	'TOI_IMPROVE_ADJUST_YIELD_FOOD_NEG_01',					'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_IMP_REMOVE_FOOD'						),
-
-			(	'TOI_IMPROVE_POWER_PENALTY_02',							'MODIFIER_SINGLE_CITY_ADJUST_REQUIRED_POWER',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_IMPROVE_GOLD_PENALTY_08',							'MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE',   					 0,			0,			NULL,						NULL,						NULL,							NULL											),
-
-			(	'TOI_IMPROVE_GRANT_STRATEGIC_IRON',						'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_IRON'							),
-			(	'TOI_IMPROVE_GRANT_STRATEGIC_NITER',					'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_NITER'						),
-			(	'TOI_IMPROVE_GRANT_STRATEGIC_COAL',						'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_COAL'							),
-			(	'TOI_IMPROVE_GRANT_STRATEGIC_OIL',						'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_OIL'							),
-			(	'TOI_IMPROVE_GRANT_STRATEGIC_ALUMINUM',					'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_ALUMINUM'						),
-
-			(	'TOI_GRANT_PROJECT_T1_01',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T1'							),
-			(	'TOI_GRANT_PROJECT_T1_02',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T1'							),
-			(	'TOI_GRANT_PROJECT_T1_03',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T1'							),
-			(	'TOI_GRANT_PROJECT_T2_01',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T2'							),
-			(	'TOI_GRANT_PROJECT_T2_02',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T2'							),
-			(	'TOI_GRANT_PROJECT_T2_03',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T2'							),
-			(	'TOI_GRANT_PROJECT_T3_01',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T3'							),
-			(	'TOI_GRANT_PROJECT_T3_02',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T3'							),
-			(	'TOI_GRANT_PROJECT_T3_03',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T3'							),
-
-			(	'TOI_GRANT_RESOURCE_T1_01',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_GRANT_RESOURCE_T1_02',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_GRANT_RESOURCE_T1_03',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_GRANT_RESOURCE_T2_01',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_GRANT_RESOURCE_T2_02',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_GRANT_RESOURCE_T2_03',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_GRANT_RESOURCE_T3_01',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_GRANT_RESOURCE_T3_02',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											),
-			(	'TOI_GRANT_RESOURCE_T3_03',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,			NULL,						NULL,						NULL,							NULL											);
+			(	'TOI_ERA_ADJUST_AMENITY_01',							'MODIFIER_PLAYER_DISTRICT_ADJUST_DISTRICT_AMENITY',				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+					
+			(	'TOI_IMPROVE_ADJUST_AMENITY_01',						'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_AMENITY',				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+					
+			(	'TOI_IMPROVE_ADJUST_YIELD_FOOD_01',						'MODIFIER_SINGLE_PLOT_ADJUST_PLOT_YIELDS',						 0,			0,				'1',			NULL,						NULL,						NULL,							'TOI_SET_IMP_FARM'								),
+			(	'TOI_IMPROVE_ADJUST_YIELD_FOOD_NEG_01',					'MODIFIER_PLAYER_ADJUST_PLOT_YIELD',							 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_IMP_REMOVE_FOOD'						),
+					
+			(	'TOI_IMPROVE_POWER_PENALTY_02',							'MODIFIER_SINGLE_CITY_ADJUST_REQUIRED_POWER',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_IMPROVE_GOLD_PENALTY_08',							'MODIFIER_SINGLE_CITY_ADJUST_YIELD_CHANGE',   					 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+					
+			(	'TOI_IMPROVE_GRANT_STRATEGIC_IRON',						'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_IRON'							),
+			(	'TOI_IMPROVE_GRANT_STRATEGIC_NITER',					'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_NITER'						),
+			(	'TOI_IMPROVE_GRANT_STRATEGIC_COAL',						'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_COAL'							),
+			(	'TOI_IMPROVE_GRANT_STRATEGIC_OIL',						'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_OIL'							),
+			(	'TOI_IMPROVE_GRANT_STRATEGIC_ALUMINUM',					'MODIFIER_SINGLE_CITY_ADJUST_FREE_RESOURCE_EXTRACTION',  		 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_IMPROVED_ALUMINUM'						),
+					
+			(	'TOI_GRANT_PROJECT_T1_01',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T1'							),
+			(	'TOI_GRANT_PROJECT_T1_02',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T1'							),
+			(	'TOI_GRANT_PROJECT_T1_03',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T1'							),
+			(	'TOI_GRANT_PROJECT_T2_01',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T2'							),
+			(	'TOI_GRANT_PROJECT_T2_02',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T2'							),
+			(	'TOI_GRANT_PROJECT_T2_03',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T2'							),
+			(	'TOI_GRANT_PROJECT_T3_01',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T3'							),
+			(	'TOI_GRANT_PROJECT_T3_02',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T3'							),
+			(	'TOI_GRANT_PROJECT_T3_03',								'TOI_MODIFIER_ALL_PLAYERS_MAKE_PROJECT_AVAILABLE',   			 0,			0,				'0',			NULL,						NULL,						NULL,							'TOI_SET_PROJECT_T3'							),
+					
+			(	'TOI_GRANT_RESOURCE_T1_01',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_GRANT_RESOURCE_T1_02',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_GRANT_RESOURCE_T1_03',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_GRANT_RESOURCE_T2_01',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_GRANT_RESOURCE_T2_02',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_GRANT_RESOURCE_T2_03',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_GRANT_RESOURCE_T3_01',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_GRANT_RESOURCE_T3_02',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											),
+			(	'TOI_GRANT_RESOURCE_T3_03',								'MODIFIER_SINGLE_CITY_GRANT_RESOURCE_IN_CITY',   				 0,			0,				'0',			NULL,						NULL,						NULL,							NULL											);
 
 --===========================================================================================================================================================================--		
 		INSERT INTO ModifierArguments
@@ -417,8 +415,10 @@ INSERT INTO Types
 		INSERT INTO Requirements
 			(	RequirementId,							RequirementType,								Inverse	)	VALUES
 
-			(	'TOI_PLOT_HAS_IMP_XXXXXXXX01',			'REQUIREMENT_PLOT_IMPROVEMENT_TYPE_MATCHES',	0		),
+			(	'TOI_PLOT_HAS_IMP_FOOD_FACTORY',		'REQUIREMENT_PLOT_IMPROVEMENT_TYPE_MATCHES',	0		),
 			(	'TOI_PLOT_IS_WITHIN_5',					'REQUIREMENT_PLOT_ADJACENT_TO_OWNER',			0		),
+
+			(	'TOI_PLOT_HAS_IMP_TEST',		'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES',	0		),
 
 			(	'TOI_PLAYER_IMPROVED_IRON',				'REQUIREMENT_PLAYER_HAS_RESOURCE_IMPROVED',		0		),
 			(	'TOI_PLAYER_IMPROVED_NITER',			'REQUIREMENT_PLAYER_HAS_RESOURCE_IMPROVED',		0		),
@@ -447,8 +447,9 @@ INSERT INTO Types
 		INSERT INTO RequirementArguments 
 			(	RequirementId,							Name,				Value								)	VALUES
 
-			(	'TOI_PLOT_HAS_IMP_XXXXXXXX01',			'ImprovementType',	'IMPROVEMENT_TOI_FOOD_FACTORY'			),
-			(	'TOI_PLOT_IS_WITHIN_5',					'MaxDistance',		'5'									),
+			(	'TOI_PLOT_HAS_IMP_TEST',				'ImprovementType',	'IMPROVEMENT_FARM'					),
+			(	'TOI_PLOT_HAS_IMP_TEST',				'MaxRange',			'5'									),
+			(	'TOI_PLOT_HAS_IMP_TEST',				'MinRange',			'0'									),
 
 			(	'TOI_PLAYER_IMPROVED_IRON',				'ResourceType',		'RESOURCE_IRON'						),
 			(	'TOI_PLAYER_IMPROVED_NITER',			'ResourceType',		'RESOURCE_NITER'					),
@@ -480,6 +481,8 @@ INSERT INTO Types
 			(	'TOI_SET_IMP_GRANT_FOOD',						'REQUIREMENTSET_TEST_ALL'	),
 			(	'TOI_SET_IMP_REMOVE_FOOD',						'REQUIREMENTSET_TEST_ALL'	),
 
+			(	'TOI_SET_IMP_FARM',								'REQUIREMENTSET_TEST_ALL'	),
+
 			(	'TOI_SET_IMPROVED_IRON',						'REQUIREMENTSET_TEST_ALL'	),
 			(	'TOI_SET_IMPROVED_NITER',						'REQUIREMENTSET_TEST_ALL'	),
 			(	'TOI_SET_IMPROVED_COAL',						'REQUIREMENTSET_TEST_ALL'	),
@@ -498,10 +501,12 @@ INSERT INTO Types
 		INSERT INTO RequirementSetRequirements
 			(	RequirementSetId,									RequirementId								)	VALUES
 
-			(	'TOI_SET_IMP_GRANT_FOOD',							'TOI_PLOT_HAS_IMP_XXXXXXXX01'				),
+			(	'TOI_SET_IMP_GRANT_FOOD',							'TOI_PLOT_HAS_IMP_FOOD_FACTORY'				),
 			(	'TOI_SET_IMP_GRANT_FOOD',							'TOI_PLOT_IS_WITHIN_5'						),
 			(	'TOI_SET_IMP_REMOVE_FOOD',							'REQUIRES_PLOT_HAS_FARM'					),
 			(	'TOI_SET_IMP_REMOVE_FOOD',							'TOI_PLOT_IS_WITHIN_5'						),
+
+			(	'TOI_SET_IMP_FARM',									'TOI_PLOT_HAS_IMP_TEST'						),
 
 			(	'TOI_SET_IMPROVED_IRON',							'TOI_PLAYER_IMPROVED_IRON'					),
 			(	'TOI_SET_IMPROVED_IRON',							'REQUIRES_CITY_IS_POWERED'					),
