@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+
+		<Replace Tag="LOC_IMPROVEMENT_TOI_REFINERY_NAME" Language="en_US">
+			<Text>Refinery</Text>
+		</Replace>		
+
+					<Replace Tag="LOC_IMPROVEMENT_TOI_REFINERY_DESCRIPTION" Language="en_US">
+						<Text>Urban Improvement. Can only be built in a city with and a City Center Expansion.[NEWLINE][NEWLINE]Grants +1 [ICON_RESOURCE_IRON] Iron, [ICON_RESOURCE_NITER] Niter, [ICON_RESOURCE_COAL] Coal, [ICON_RESOURCE_OIL]Oil, and [ICON_RESOURCE_ALUMINUM] Aluminum Strategic resource provided that a copy is improved somewhere in the owners empire. Requires that the owner city is [ICON_Power] Powered.[NEWLINE][NEWLINE]Costs 2 [ICON_Power] Power and 8 [ICON_Gold] Gold to maintain and lowers [ICON_Amenities] Amenities by 1.</Text>
+					</Replace>
+
+		<Replace Tag="LOC_IMPROVEMENT_TOI_WAREHOUSE_NAME" Language="en_US">
+			<Text>Shipping Yard</Text>
+		</Replace>
+
+					<Replace Tag="LOC_IMPROVEMENT_TOI_WAREHOUSE_DESCRIPTION" Language="en_US">
+						<Text>Urban Improvement. Can only be built in a city with and a City Center Expansion.[NEWLINE][NEWLINE]Grants +1 [ICON_TradeRoute] Trade Route capacity. Trade Routes to Foreign cities gain +1 [ICON_Gold] Gold for every Luxury and Strategic resource in the Destination city. Requires that the owner city is [ICON_Power] Powered.[NEWLINE][NEWLINE]Costs 2 [ICON_Power] Power and lowers [ICON_Amenities] Amenities by 2.</Text>
+					</Replace>
+
+		<Replace Tag="LOC_IMPROVEMENT_TOI_FOOD_FACTORY_NAME" Language="en_US">
+			<Text>Canned Food Factory</Text>
+		</Replace>
+
+					<Replace Tag="LOC_IMPROVEMENT_TOI_FOOD_FACTORY_DESCRIPTION" Language="en_US">
+						<Text>Urban Improvement. Can only be built in a city with and a City Center Expansion.[NEWLINE][NEWLINE]Gains +1 [ICON_Food] Food from every owned Farm improvement within 4 tiles. Farm improvements within 4 tiles lose 1 [ICON_Food] Food. Requires that the owner city is [ICON_Power] Powered.[NEWLINE][NEWLINE]Costs 2 [ICON_Power] Power and 8 [ICON_Gold] Gold to maintain and lowers [ICON_Amenities] Amenities by 1. Cannot be removed once placed.</Text>
+					</Replace>		
+
+		<Replace Tag="LOC_IMPROVEMENT_TOI_GARBAGE_NAME" Language="en_US">
+			<Text>Garbage Dump</Text>
+		</Replace>
+
+					<Replace Tag="LOC_IMPROVEMENT_TOI_GARBAGE_DESCRIPTION" Language="en_US">
+						<Text>Urban Improvement. Can only be built in a city with and a City Center Expansion.[NEWLINE][NEWLINE]Grants +2 [ICON_Amenities] Amenities.[NEWLINE][NEWLINE]Costs 2 [ICON_Power] Power and 8 [ICON_Gold] Gold to maintain.</Text>
+					</Replace>	
+
+		<Replace Tag="LOC_IMPROVEMENT_TOI_POWER_STATION_NAME" Language="en_US">
+			<Text>Power Station</Text>
+		</Replace>
+
+					<Replace Tag="LOC_IMPROVEMENT_TOI_POWER_STATION_DESCRIPTION" Language="en_US">
+						<Text>Urban Improvement. Can only be built in a city with and a City Center Expansion.[NEWLINE][NEWLINE]Grants +2 [ICON_Power] Power from Misc Sources.[NEWLINE][NEWLINE]Costs 8 [ICON_Gold] Gold to maintain and lowers [ICON_Amenities] Amenities by 1.</Text>
+					</Replace>				
+
+	</LocalizedText>
+</GameData>
+

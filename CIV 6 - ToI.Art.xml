@@ -277,6 +277,7 @@
 		<Element>
 			<consumerName text="Terrains"/>
 			<relativeArtDefPaths>
+				<Element text="TerrainStyle.artdef"/>		
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
@@ -284,6 +285,9 @@
 		<Element>
 			<consumerName text="Features"/>
 			<relativeArtDefPaths>
+				<Element text="Features.artdef"/>
+				<Element text="Improvements.artdef"/>
+				<Element text="TerrainStyle.artdef"/>
 			</relativeArtDefPaths>
 			<libraryDependencies/>
 			<loadsLibraries>false</loadsLibraries>
@@ -630,6 +634,10 @@
 		<Element>
 			<name text="Expansion2" />
 			<id text="b1b63999-6b16-4dd2-a5b6-eb19794aa8ca" />
+		</Element>
+		<Element>
+			<name text="City Lights" />
+			<id text="95b955fc-2dd1-41c5-989e-0265d98a28bd" />
 		</Element>
 	</requiredGameArtIDs>
 </AssetObjects..GameArtSpecification>

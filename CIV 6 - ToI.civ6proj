@@ -21,7 +21,7 @@
 </Associations>]]></AssociationData>
     <AssemblyName>CIV 6 - ToI</AssemblyName>
     <RootNamespace>CIV 6 - ToI</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="NewAction"><File>Gameplay/TOI_Core.sql</File></UpdateDatabase><UpdateArt id="NewAction"><File>(Mod Art Dependency File)</File><File>ArtDefs/Improvements.artdef</File><File>ArtDefs/Landmarks.artdef</File></UpdateArt></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="NewAction"><File>Gameplay/TOI_Core.sql</File></UpdateDatabase><UpdateArt id="NewAction"><File>(Mod Art Dependency File)</File><File>ArtDefs/Improvements.artdef</File><File>ArtDefs/Landmarks.artdef</File></UpdateArt><UpdateText id="ToI_UpdateText"><File>Text/TOI_Text.xml</File></UpdateText></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -37,6 +37,27 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Art\TOI_Art.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_FOOD_FactoryIND_test.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_FOOD_Filler_LgA.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_FOOD_Filler_SmA.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_FOOD_Filler_SmB.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_FOOD_Filler_SmC.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_FOOD_Shed_bldg.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_FOOD_Shed_bldgA.ast">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Assets\IMP_GARBAGE_PileA.ast">
@@ -57,16 +78,40 @@
     <Content Include="Assets\IMP_GARBAGE_Tires_004.ast">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Assets\IMP_GOLD_MODCrane_LG_01.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_GOLD_MODCrane_LG_02.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_FOOD_building_Stack.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_FOOD_FACTORY_IND.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_FOOD_FACTORY_MOD.ast">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Assets\IMP_TOI_GARBAGE.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_POWER_STATION_IND.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Assets\IMP_TOI_POWER_STATION_MOD.ast">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Assets\IMP_TOI_REFINERY.ast">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Assets\IMP_TOI_REFINERY_building.ast">
+    <Content Include="Assets\IMP_TOI_WAREHOUSE_IND.ast">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Assets\IMP_TOI_REFINERY_building_02.ast">
+    <Content Include="Assets\IMP_TOI_WAREHOUSE_MOD.ast">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Gameplay\TOI_Core copy.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Gameplay\TOI_Core.sql">
@@ -96,6 +141,24 @@
     <Content Include="Geometries\IMP_GARBAGE_Tires_004.geo">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Materials\IMP_FOOD_Base_Variants.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_FOOD_Base_Variants_Non_Emissive.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_FOOD_PRD_Base.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_FOOD_PRD_Base_Non_Emissive.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_FOOD_Sheds.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Materials\IMP_FOOD_Sheds_Non_Emissive.mtl">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Materials\IMP_GARBAGE_Group.mtl">
       <SubType>Content</SubType>
     </Content>
@@ -105,10 +168,40 @@
     <Content Include="Materials\IMP_GARBAGE_TIRES.mtl">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Materials\IMP_TOI_REFINERY_Base.mtl">
+    <Content Include="Materials\IMP_TOI_GOLD_Crates_Base.mtl">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Materials\IMP_TOI_REFINERY_Base_Non_Emissive.mtl">
+    <Content Include="Materials\IMP_TOI_GOLD_Crates_V2_Base.mtl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Base_A.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Base_A.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Base_B.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Base_B.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Base_E.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Base_E.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Base_Variants_B.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Base_Variants_B.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Sheds_B.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_FOOD_Sheds_B.tex">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Textures\IMP_GARBAGE_Base_B.dds">
@@ -183,10 +276,19 @@
     <Content Include="Textures\IMP_GARBAGE_TIRE_normal.tex">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\IMP_TOI_REFINERY_Base_B.dds">
+    <Content Include="Textures\IMP_TOI_GOLD_Crates_B.dds">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Textures\IMP_TOI_REFINERY_Base_B.tex">
+    <Content Include="Textures\IMP_TOI_GOLD_Crates_B.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_TOI_GOLD_Crates_V2_B.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Textures\IMP_TOI_GOLD_Crates_V2_B.tex">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\TOI_Text.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="XLPs\tilebases.xlp">
@@ -201,6 +303,7 @@
     <Folder Include="Geometries\" />
     <Folder Include="Materials\" />
     <Folder Include="Textures\" />
+    <Folder Include="Text\" />
     <Folder Include="XLPs\" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />

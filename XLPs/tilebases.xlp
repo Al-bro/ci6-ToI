@@ -10,14 +10,6 @@
 	<m_PackageName text="landmarks/tilebases"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="IMP_TOI_REFINERY_building"/>
-			<m_ObjectName text="IMP_TOI_REFINERY_building"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMP_TOI_REFINERY_building_02"/>
-			<m_ObjectName text="IMP_TOI_REFINERY_building_02"/>
-		</Element>
-		<Element>
 			<m_EntryID text="IMP_TOI_REFINERY"/>
 			<m_ObjectName text="IMP_TOI_REFINERY"/>
 		</Element>
@@ -50,14 +42,6 @@
 			<m_ObjectName text="IMP_GARBAGE_Tires_004"/>
 		</Element>
 		<Element>
-			<m_EntryID text="IMP_FOOD_FactorySubB"/>
-			<m_ObjectName text="IMP_FOOD_FactorySubB"/>
-		</Element>
-		<Element>
-			<m_EntryID text="IMP_FOOD_FactoryINDExt"/>
-			<m_ObjectName text="IMP_FOOD_FactoryINDExt"/>
-		</Element>
-		<Element>
 			<m_EntryID text="IMP_TOI_FOOD_building_Stack"/>
 			<m_ObjectName text="IMP_TOI_FOOD_building_Stack"/>
 		</Element>
@@ -84,6 +68,42 @@
 		<Element>
 			<m_EntryID text="IMP_FOOD_Filler_SmC"/>
 			<m_ObjectName text="IMP_FOOD_Filler_SmC"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_Shed_bldgA"/>
+			<m_ObjectName text="IMP_FOOD_Shed_bldgA"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_FOOD_Shed_bldg"/>
+			<m_ObjectName text="IMP_FOOD_Shed_bldg"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_FOOD_FACTORY_MOD"/>
+			<m_ObjectName text="IMP_TOI_FOOD_FACTORY_MOD"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_GOLD_MODCrane_LG_01"/>
+			<m_ObjectName text="IMP_GOLD_MODCrane_LG_01"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_GOLD_MODCrane_LG_02"/>
+			<m_ObjectName text="IMP_GOLD_MODCrane_LG_02"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_WAREHOUSE_IND"/>
+			<m_ObjectName text="IMP_TOI_WAREHOUSE_IND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_WAREHOUSE_MOD"/>
+			<m_ObjectName text="IMP_TOI_WAREHOUSE_MOD"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_WAREHOUSE_MOD1"/>
+			<m_ObjectName text="IMP_TOI_WAREHOUSE_MOD"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMP_TOI_POWER_STATION_MOD"/>
+			<m_ObjectName text="IMP_TOI_POWER_STATION_MOD"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
